@@ -1,6 +1,4 @@
 import React from 'react';
-// import Background from './media/slide-1.jpg';
-// import Image from './media/hero-vr.png';
 import './Cases.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

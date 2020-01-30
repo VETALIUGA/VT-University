@@ -1,0 +1,30 @@
+.content-block {
+    &__section {
+        padding: 150px 0;
+        background-color: #fff;
+    }
+    &__grid {
+        grid-template-columns: 570px 1fr;
+        gap: 30px;
+    }
+    &__image {
+        display: block;
+        margin-left: -200px;
+        margin-top: -245px;
+    }
+    &__article {
+        margin-bottom: 16px;
+    }
+    &__paragraph {
+        line-height: 33px;
+        margin-bottom: 40px;
+    }
+    &__list {
+        margin-bottom: 70px;
+    }
+    &__button {
+        border-color: #e1d4d4;
+        margin-left: 13px;
+        color: #232328;
+    }
+}

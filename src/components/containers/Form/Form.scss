@@ -1,0 +1,61 @@
+.form {
+    &__section {
+        z-index: 2;
+        position: relative;
+        padding: 150px 0;
+        background-size: cover;
+    }
+    &__container {
+        max-width: 770px;
+    }
+    &__block {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+    &__article {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__paragraph {
+        color: #fff;
+        text-align: center;
+        line-height: 33px;
+        font-size: 17px;
+        margin-bottom: 70px;
+    }
+    &__label {
+        width: 100%;
+    }
+    &__input {
+        width: 100%;
+        font-family: inherit;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #538cd5;
+        padding: 20px;
+    }
+    &__textarea {
+        font-size: 16px;
+        font-family: inherit;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #538cd5;
+        padding: 20px;
+        min-height: 210px;
+        resize: vertical;
+    }
+    &__submit {
+        padding: 11.5px 40px;
+        box-shadow: 0 5px 15px 0 rgba(1,29,80,.1);
+        min-width: 200px;
+    }
+    &__description {
+        color: #fff;
+        font-size: 17px;
+        margin-top: 30px;
+        text-align: center;
+    }
+}

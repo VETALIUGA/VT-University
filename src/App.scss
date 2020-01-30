@@ -111,6 +111,7 @@
   &:hover {
     background-color: #f4b930;
     border-color: #f4b930;
+    color: #fff;
   }
 
   &__color {
@@ -123,5 +124,53 @@
         border-color: #2e77ff;
       }
     }
+    &--blue {
+      background-color: #2e77ff;
+      border-color: #2e77ff;
+
+      &:hover {
+        background-color: #f4b930;
+        border-color: #f4b930;
+      }
+    }
+  }
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 33px;
+  &-item {
+    padding-left: 26px;
+    position: relative;
+    &:before {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: #232328;
+    border-radius: 50%;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    }
+  }
+}
+.faq-contact__wrap {
+  position: relative;
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(150deg,#189bfb 0%,#000b7f 100%);
+  &:before {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 103%;
+    height: 25%;
+    z-index: 1;
+    transform: scale(1.6) rotate(-7deg);
   }
 }

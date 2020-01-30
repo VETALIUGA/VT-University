@@ -1,0 +1,43 @@
+.waves {
+    &__wrap {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 125px;
+        z-index: 0;
+
+        svg {
+            position: absolute;
+            z-index: 1;
+            background-repeat: repeat-x;
+        }
+    }
+}
+
+.wave {
+    &_bot {
+        bottom: -42px!important;
+        left: -43px;
+    }
+    &_mid {
+        bottom: -15px;
+        left: -38%;
+        animation: upanimate 5s infinite linear;
+    }
+    &_top {
+        left: -15%;
+        animation: updown 4s infinite linear;
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,50 @@
+.faq-section {
+    &__section {
+        z-index: 2;
+        position: relative;
+        padding: 150px 0;
+    }
+    &__container {
+        max-width: 768px;
+        .accordion {
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 5px;
+            overflow: hidden;
+            &__button {
+                outline: none;
+                color: #2e77ff;
+                font-size: 19px;
+                background-color: #fff;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                    transition: .3s;
+                }
+            }
+        }
+        .accordion__button[aria-expanded='true']::before, .accordion__button[aria-selected='true']::before {
+            transform:  translate(-50%, -50%) rotate(45deg);
+        }
+        .accordion__item + .accordion__item {
+            border-bottom: 1px solid rgba(0,0,0,.125);
+        }
+        .accordion__panel {
+            border-top: 1px solid rgba(0,0,0,.125);
+            font-size: 17px;
+            line-height: 33px;
+            color: #444;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    &__article {
+        text-align: center;
+        margin-bottom: 85px;
+    }
+   
+}

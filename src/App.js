@@ -7,6 +7,11 @@ import About from './components/containers/About/About';
 import Services from './components/containers/Services/Services';
 import Cases from './components/containers/Cases/Cases';
 import CallToAction from './components/containers/CallToAction/CallToAction';
+import ContentBlock from './components/containers/ContentBlock/ContentBlock';
+import FaqSection from './components/containers/FaqSection/FaqSection';
+import Form from './components/containers/Form/Form';
+import Footer from './components/containers/Footer/Footer';
+import Waves from './components/containers/Waves/Waves';
 
 function App() {
   return (
@@ -33,6 +38,13 @@ function App() {
     <Services />
     <Cases />
     <CallToAction />
+    <ContentBlock />
+    <div className="faq-contact__wrap">
+      <FaqSection />
+      <Form />
+      <Waves />
+    </div>
+    <Footer />
     </>
   );
 }
