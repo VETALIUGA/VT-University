@@ -1,0 +1,37 @@
+.cases {
+    &__section {
+        padding: 150px 0;
+    }
+    &__grid {
+        grid-template-columns: minmax(auto, 670px) minmax(200px, auto);
+        align-items: flex-end;
+        margin-bottom: 90px;
+        &-item {
+            &-2 {
+                justify-self: flex-end;
+            }
+        }
+    }
+    &__link {
+        span {
+            border-bottom: 2px solid #96bbff;
+        }
+        &:hover {
+            span {
+                border-color: transparent;
+            }
+
+        }
+        &::after {
+            content: "→";
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+    &__paragraph {
+        margin-top: 6px;
+        color: #666668;
+        line-height: 33px;
+        font-size: 17px;
+    }
+}

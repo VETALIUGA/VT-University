@@ -1,0 +1,191 @@
+.about {
+    &__section {
+        position: relative;
+        background-image: -webkit-linear-gradient(90deg, #f7f9fe 0%, white 100%);
+        padding: 150px 0;
+        background-position: left 50%;
+        background-repeat: no-repeat;
+        border-bottom: 1px solid #e8ecef;
+
+        &-image {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__grid {
+        grid-template-columns: auto 270px;
+        gap: 30px;
+
+        &-item {
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+            position: relative;
+
+            &-1 {
+                padding: 88px 70px;
+            }
+
+            &-2 {
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+    &__article {
+        margin-bottom: 7px;
+
+        &--colored {
+            position: relative;
+            display: block;
+            color: #2e77ff;
+            width: fit-content;
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                transform: translateY(50%);
+                left: calc(100% + 10px);
+                content: "";
+                display: block;
+                width: 80px;
+                height: 5px;
+                background-color: #2e77ff;
+            }
+        }
+    }
+
+    &__paragraph {
+        margin-top: 31px;
+        font-size: 17px;
+        line-height: 33px;
+        color: #444;
+    }
+
+    &__content {
+        z-index: 2;
+    }
+
+    &__overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    &__button {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        display: block;
+        border-radius: 100%;
+        padding: 42px;
+        background-color: #fff;
+        animation: button-pulse 2s linear infinite;
+
+        &-icon {
+            display: block;
+            width: 16px;
+        }
+    }
+
+    &-advantages {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            margin-top: 100px;
+
+            &-item {
+                &-1 {
+                    .about-advantages__icon-link {
+                        background-color: #eef3fe;
+                    }
+
+                    &:hover {
+                        .about-advantages__icon-link {
+                            background-color: #2e77ff;
+                        }
+                    }
+                }
+
+                &-2 {
+                    .about-advantages__icon-link {
+                        background-color: #f9eeee;
+                    }
+
+                    &:hover {
+                        .about-advantages__icon-link {
+                            background-color: #dd422e;
+                        }
+                    }
+                }
+
+                &-3 {
+                    .about-advantages__icon-link {
+                        background-color: #e5f9f3;
+                    }
+
+                    &:hover {
+                        .about-advantages__icon-link {
+                            background-color: #30af8c;
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+
+        &__icon {
+            display: block;
+            width: 32px;
+            transition: fill .3s;
+
+            &-link {
+                width: fit-content;
+                display: block;
+                padding: 29px;
+                border-radius: 100%;
+                margin-bottom: 40px;
+                transition: background-color .3s;
+            }
+        }
+
+        &__article {
+            margin-bottom: 17px;
+            color: #232328;
+        }
+
+        &__paragraph {
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }
+}
+
+@keyframes button-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, .3);
+    }
+
+    40% {
+        box-shadow: 0 0 0 20px transparent;
+    }
+
+    80% {
+        box-shadow: 0 0 0 20px transparent;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+}

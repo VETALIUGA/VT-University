@@ -1,0 +1,46 @@
+.call-to-action {
+    &__section {
+        background-image: -webkit-linear-gradient(165deg, #189bfb 0%, #000b7f 100%);
+        padding: 150px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__container {
+        padding: 80px 100px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    &__article {
+        margin-bottom: 25px;
+    }
+
+    &__paragraph {
+        line-height: 33px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        padding: 20px 36px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+
+    &__icon {
+        width: 20px;
+        margin-left: 40px;
+    }
+
+    &__overlay {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__wave {
+        position: absolute;
+        left: -825px;
+        bottom: -70px;
+    }
+}
